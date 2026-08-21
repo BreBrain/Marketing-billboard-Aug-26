@@ -1,0 +1,215 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pura OOH Super App Moodboard</title><style>
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+background:#0B1A2B;color:#F5F5F2}
+header{padding:28px 32px 18px;border-bottom:1px solid #1e3247}
+h1{margin:0 0 6px;font-size:24px;letter-spacing:-.3px}
+.sub{color:#B9D9F7;font-size:13.5px;max-width:76ch;opacity:.85}
+.bar{padding:14px 32px;border-bottom:1px solid #1e3247;position:sticky;top:0;
+background:#0B1A2B;z-index:10;display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+.fgroup{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.flabel{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#A7A889;margin-right:3px}
+.chip{border:1px solid #2a4459;background:transparent;color:#F5F5F2;border-radius:999px;
+padding:4px 11px;font-size:12.5px;cursor:pointer;font-family:inherit}
+.chip:hover{border-color:#B9D9F7}
+.chip.on{background:#B9D9F7;color:#0B1A2B;border-color:#B9D9F7;font-weight:600}
+#q{margin-left:auto;background:#0f2436;border:1px solid #2a4459;color:#F5F5F2;
+border-radius:8px;padding:7px 12px;font-size:13px;min-width:210px;font-family:inherit}
+#count{padding:14px 32px 0;color:#A7A889;font-size:12.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px;padding:18px 32px 60px}
+.card{background:#0f2436;border:1px solid #1e3247;border-radius:12px;overflow:hidden;cursor:pointer;
+transition:border-color .15s,transform .15s}
+.card:hover{border-color:#B9D9F7;transform:translateY(-2px)}
+.card.hide{display:none}
+.thumb{aspect-ratio:16/9;background:#08131f;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.meta{padding:12px 14px 14px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:5px}
+.msg{margin:0 0 9px;font-size:13px;color:#B9D9F7;opacity:.9;display:-webkit-box;
+-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tags{display:flex;gap:5px;flex-wrap:wrap}
+.tag{font-size:10.5px;padding:2px 7px;border-radius:4px;background:#16304a;color:#B9D9F7}
+.tag.photo{background:#A7A889;color:#0B1A2B;font-weight:600}
+.tag.mockup{background:#F7CDB9;color:#0B1A2B;font-weight:600}
+.t{font-size:10.5px;padding:2px 7px;border-radius:4px;font-weight:700}
+.t1{background:#F7B9B9;color:#0B1A2B}
+.t2{background:#16304a;color:#B9D9F7}
+#drawer{position:fixed;top:0;right:-560px;width:540px;max-width:94vw;height:100%;background:#0c1e2f;
+border-left:1px solid #2a4459;transition:right .22s;overflow-y:auto;z-index:50;padding:22px 26px 60px}
+#drawer.open{right:0}
+#drawer img{width:100%;border-radius:8px;margin-bottom:16px;background:#08131f}
+#drawer h2{margin:0 0 4px;font-size:20px}
+dl{margin:14px 0 0}
+dt{font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;color:#A7A889;margin-top:13px}
+dd{margin:3px 0 0;font-size:14px;color:#F5F5F2}
+dd a{color:#B9D9F7;word-break:break-all}
+#close{position:absolute;top:16px;right:20px;background:#16304a;border:0;color:#F5F5F2;
+border-radius:6px;padding:6px 11px;cursor:pointer;font-family:inherit}
+#scrim{position:fixed;inset:0;background:rgba(3,10,18,.6);opacity:0;pointer-events:none;
+transition:opacity .22s;z-index:40}
+#scrim.on{opacity:1;pointer-events:auto}
+</style></head><body>
+<header><h1>Out of home: message left, app screen right</h1>
+<p class="sub">Reference collection for the super app billboard format. The left half carries the claim, the right half proves it by showing the product doing many things at once. Tier 1 meets the split strictly. Tier 2 is an adjacent execution kept for the pattern analysis. Filter on <em>photo</em> to see only placements that were actually photographed in the wild.</p></header>
+<div class="bar">
+<div class="fgroup"><span class="flabel">Tier</span><button class="chip on" data-f="tier" data-v="">All</button><button class="chip" data-f="tier" data-v="1">1</button><button class="chip" data-f="tier" data-v="2">2</button></div>
+<div class="fgroup"><span class="flabel">Type</span><button class="chip on" data-f="type" data-v="">All</button><button class="chip" data-f="type" data-v="mockup">mockup</button><button class="chip" data-f="type" data-v="photo">photo</button></div>
+<div class="fgroup"><span class="flabel">Region</span><button class="chip on" data-f="region" data-v="">All</button><button class="chip" data-f="region" data-v="Africa">Africa</button><button class="chip" data-f="region" data-v="Americas">Americas</button><button class="chip" data-f="region" data-v="Europe">Europe</button><button class="chip" data-f="region" data-v="GCC">GCC</button><button class="chip" data-f="region" data-v="n/a">n/a</button></div>
+<div class="fgroup"><span class="flabel">Breadth device</span><button class="chip on" data-f="device" data-v="">All</button><button class="chip" data-f="device" data-v="icon-grid">icon-grid</button><button class="chip" data-f="device" data-v="multi-phone">multi-phone</button><button class="chip" data-f="device" data-v="none">none</button><button class="chip" data-f="device" data-v="single-screen-dense">single-screen-dense</button><button class="chip" data-f="device" data-v="stacked-cards">stacked-cards</button></div>
+<input id="q" placeholder="Search brand or message">
+</div>
+<div id="count"></div>
+<main class="grid"><article class="card" data-i="0" data-tier="1" data-type="photo"
+ data-region="GCC" data-device="single-screen-dense" data-brand="Bolt"
+ data-hay="bolt tap, ride, and arrive app screen panel to the right of the message, bilingual en and ar lockup uae">
+<div class="thumb"><img loading="lazy" src="images/bolt-79.jpg" alt="Bolt out of home"></div>
+<div class="meta"><div class="row"><strong>Bolt</strong><span class="t t1">T1</span></div>
+<p class="msg">Tap, ride, and arrive</p>
+<div class="tags"><span class="tag">UAE</span><span class="tag photo">photo</span><span class="tag">single-screen-dense</span></div>
+</div></article><article class="card" data-i="1" data-tier="1" data-type="photo"
+ data-region="Americas" data-device="single-screen-dense" data-brand="Community bank"
+ data-hay="community bank download the app &amp; bank from anywhere phone with app screen right of the message, family imagery left united states">
+<div class="thumb"><img loading="lazy" src="images/community-bank-51.jpg" alt="Community bank out of home"></div>
+<div class="meta"><div class="row"><strong>Community bank</strong><span class="t t1">T1</span></div>
+<p class="msg">Download the app &amp; bank from anywhere</p>
+<div class="tags"><span class="tag">United States</span><span class="tag photo">photo</span><span class="tag">single-screen-dense</span></div>
+</div></article><article class="card" data-i="2" data-tier="1" data-type="mockup"
+ data-region="n/a" data-device="single-screen-dense" data-brand="Generic template"
+ data-hay="generic template perfect mobileapp / download our app now phone on the right, generic app home screen n/a">
+<div class="thumb"><img loading="lazy" src="images/generic-template-41.jpg" alt="Generic template out of home"></div>
+<div class="meta"><div class="row"><strong>Generic template</strong><span class="t t1">T1</span></div>
+<p class="msg">Perfect MobileApp / Download our app now</p>
+<div class="tags"><span class="tag">n/a</span><span class="tag mockup">mockup</span><span class="tag">single-screen-dense</span></div>
+</div></article><article class="card" data-i="3" data-tier="1" data-type="mockup"
+ data-region="n/a" data-device="single-screen-dense" data-brand="Generic template"
+ data-hay="generic template smartx awesome mobile app phone right with app ui n/a">
+<div class="thumb"><img loading="lazy" src="images/generic-template-141.jpg" alt="Generic template out of home"></div>
+<div class="meta"><div class="row"><strong>Generic template</strong><span class="t t1">T1</span></div>
+<p class="msg">Smartx Awesome Mobile App</p>
+<div class="tags"><span class="tag">n/a</span><span class="tag mockup">mockup</span><span class="tag">single-screen-dense</span></div>
+</div></article><article class="card" data-i="4" data-tier="1" data-type="photo"
+ data-region="GCC" data-device="single-screen-dense" data-brand="GoChat Messenger"
+ data-hay="gochat messenger make free voice and video calls worldwide with gochat messenger talent and phone right of the message, qr code for download uae - dubai">
+<div class="thumb"><img loading="lazy" src="images/gochat-messenger-156.jpg" alt="GoChat Messenger out of home"></div>
+<div class="meta"><div class="row"><strong>GoChat Messenger</strong><span class="t t1">T1</span></div>
+<p class="msg">Make free voice and video calls worldwide with GoChat Messenger</p>
+<div class="tags"><span class="tag">UAE - Dubai</span><span class="tag photo">photo</span><span class="tag">single-screen-dense</span></div>
+</div></article><article class="card" data-i="5" data-tier="1" data-type="mockup"
+ data-region="Europe" data-device="stacked-cards" data-brand="Revolut"
+ data-hay="revolut this is retail therapy rounded card frames to the right holding 3d product renders (sunglasses, earbuds, lipstick, fabric), styled as app tiles rather than actual app ui united kingdom">
+<div class="thumb"><img loading="lazy" src="images/revolut-368.jpeg" alt="Revolut out of home"></div>
+<div class="meta"><div class="row"><strong>Revolut</strong><span class="t t1">T1</span></div>
+<p class="msg">THIS IS RETAIL THERAPY</p>
+<div class="tags"><span class="tag">United Kingdom</span><span class="tag mockup">mockup</span><span class="tag">stacked-cards</span></div>
+</div></article><article class="card" data-i="6" data-tier="1" data-type="mockup"
+ data-region="Europe" data-device="single-screen-dense" data-brand="Revolut"
+ data-hay="revolut change the way you money. for those who want more from their money, there&#x27;s revolut talent on the right with a balance card and a transaction row floated over the photograph united kingdom">
+<div class="thumb"><img loading="lazy" src="images/revolut-370.jpeg" alt="Revolut out of home"></div>
+<div class="meta"><div class="row"><strong>Revolut</strong><span class="t t1">T1</span></div>
+<p class="msg">CHANGE THE WAY YOU MONEY. For those who want more from their money, there&#x27;s Revolut</p>
+<div class="tags"><span class="tag">United Kingdom</span><span class="tag mockup">mockup</span><span class="tag">single-screen-dense</span></div>
+</div></article><article class="card" data-i="7" data-tier="1" data-type="photo"
+ data-region="Americas" data-device="single-screen-dense" data-brand="Uber"
+ data-hay="uber go anywhere. get anything. no phone at all. two columns of service words flank the line: subway, scooter, ride, train, bike, moped on the left; courier, cleaner, food, groceries, dog walker, meds on the right united states">
+<div class="thumb"><img loading="lazy" src="images/uber-387.jpg" alt="Uber out of home"></div>
+<div class="meta"><div class="row"><strong>Uber</strong><span class="t t1">T1</span></div>
+<p class="msg">Go anywhere. Get anything.</p>
+<div class="tags"><span class="tag">United States</span><span class="tag photo">photo</span><span class="tag">single-screen-dense</span></div>
+</div></article><article class="card" data-i="8" data-tier="1" data-type="photo"
+ data-region="Americas" data-device="multi-phone" data-brand="Varo"
+ data-hay="varo money shouldn&#x27;t just work for some of us. it should work for all of us. two phone screens at left showing account and transaction views united states">
+<div class="thumb"><img loading="lazy" src="images/varo-53.webp" alt="Varo out of home"></div>
+<div class="meta"><div class="row"><strong>Varo</strong><span class="t t1">T1</span></div>
+<p class="msg">Money shouldn&#x27;t just work for some of us. It should work for all of us.</p>
+<div class="tags"><span class="tag">United States</span><span class="tag photo">photo</span><span class="tag">multi-phone</span></div>
+</div></article><article class="card" data-i="9" data-tier="2" data-type="photo"
+ data-region="GCC" data-device="none" data-brand="Careem"
+ data-hay="careem the everything app. no app screen at all. three words on a jcdecaux unipole uae - dubai">
+<div class="thumb"><img loading="lazy" src="images/careem-95.jpg" alt="Careem out of home"></div>
+<div class="meta"><div class="row"><strong>Careem</strong><span class="t t2">T2</span></div>
+<p class="msg">The everything app.</p>
+<div class="tags"><span class="tag">UAE - Dubai</span><span class="tag photo">photo</span><span class="tag">none</span></div>
+</div></article><article class="card" data-i="10" data-tier="2" data-type="photo"
+ data-region="GCC" data-device="icon-grid" data-brand="Careem Plus"
+ data-hay="careem plus arabic: save aed 200+ every month with careem plus talent with a phone, coins and service icons centre, message right in arabic uae">
+<div class="thumb"><img loading="lazy" src="images/careem-plus-98.jpg" alt="Careem Plus out of home"></div>
+<div class="meta"><div class="row"><strong>Careem Plus</strong><span class="t t2">T2</span></div>
+<p class="msg">Arabic: save AED 200+ every month with Careem Plus</p>
+<div class="tags"><span class="tag">UAE</span><span class="tag photo">photo</span><span class="tag">icon-grid</span></div>
+</div></article><article class="card" data-i="11" data-tier="2" data-type="photo"
+ data-region="Americas" data-device="single-screen-dense" data-brand="Exito"
+ data-hay="exito tenerlo todo para tu hogar, es tener lo que tu necesitas isometric cutaway illustration of a house filled with delivered goods, right of the message colombia">
+<div class="thumb"><img loading="lazy" src="images/exito-358.jpg" alt="Exito out of home"></div>
+<div class="meta"><div class="row"><strong>Exito</strong><span class="t t2">T2</span></div>
+<p class="msg">Tenerlo todo para tu hogar, es tener lo que tu necesitas</p>
+<div class="tags"><span class="tag">Colombia</span><span class="tag photo">photo</span><span class="tag">single-screen-dense</span></div>
+</div></article><article class="card" data-i="12" data-tier="2" data-type="photo"
+ data-region="GCC" data-device="icon-grid" data-brand="GoChat Messenger"
+ data-hay="gochat messenger enjoy free hd calls and many more super features feature icon set to the right of the message uae - dubai">
+<div class="thumb"><img loading="lazy" src="images/gochat-messenger-152.jpg" alt="GoChat Messenger out of home"></div>
+<div class="meta"><div class="row"><strong>GoChat Messenger</strong><span class="t t2">T2</span></div>
+<p class="msg">Enjoy FREE HD calls and many more super features</p>
+<div class="tags"><span class="tag">UAE - Dubai</span><span class="tag photo">photo</span><span class="tag">icon-grid</span></div>
+</div></article><article class="card" data-i="13" data-tier="2" data-type="photo"
+ data-region="Africa" data-device="single-screen-dense" data-brand="Kose"
+ data-hay="kose move on your terms. know your price, track your ride talent holding a phone, app store and google play badges stacked at lower left zimbabwe">
+<div class="thumb"><img loading="lazy" src="images/kose-386.webp" alt="Kose out of home"></div>
+<div class="meta"><div class="row"><strong>Kose</strong><span class="t t2">T2</span></div>
+<p class="msg">Move on your terms. Know your price, track your ride</p>
+<div class="tags"><span class="tag">Zimbabwe</span><span class="tag photo">photo</span><span class="tag">single-screen-dense</span></div>
+</div></article><article class="card" data-i="14" data-tier="2" data-type="photo"
+ data-region="GCC" data-device="none" data-brand="Yango Maps"
+ data-hay="yango maps move your way product name lockup right, bilingual uae - dubai">
+<div class="thumb"><img loading="lazy" src="images/yango-maps-503.jpg" alt="Yango Maps out of home"></div>
+<div class="meta"><div class="row"><strong>Yango Maps</strong><span class="t t2">T2</span></div>
+<p class="msg">MOVE YOUR WAY</p>
+<div class="tags"><span class="tag">UAE - Dubai</span><span class="tag photo">photo</span><span class="tag">none</span></div>
+</div></article></main>
+<div id="scrim"></div>
+<aside id="drawer"><button id="close">Close</button><div id="dbody"></div></aside>
+<script>
+const DATA=[{"file": "bolt-79.jpg", "brand": "Bolt", "market": "UAE", "region": "GCC", "year": "2024", "type": "photo", "tier": 1, "breadth_device": "single-screen-dense", "message": "Tap, ride, and arrive", "screen_communicates": "App screen panel to the right of the message, bilingual EN and AR lockup", "note": "GCC evidence that the format travels into a bilingual market.", "source_url": "https://insiteooh.com/article/11059-bolts-app-unveils-dooh-campaign-for-a-smarter-ride-hailing", "image_url": "https://insiteooh.com/storage/media/articles/100023/2-Share---2024-12-09T153346.444.jpg", "width": 1200, "height": 630}, {"file": "community-bank-51.jpg", "brand": "Community bank", "market": "United States", "region": "Americas", "year": "unknown", "type": "photo", "tier": 1, "breadth_device": "single-screen-dense", "message": "Download the app & bank from anywhere", "screen_communicates": "Phone with app screen right of the message, family imagery left", "note": "Photo evidence of the split in small market OOH.", "source_url": "https://www.adomni.com/cms/bank-on-dooh-for-your-next-campaign", "image_url": "https://www.adomni.com/wp-content/uploads/2021/09/DOOH-for-Financial_social-scaled.jpg", "width": 2560, "height": 1707}, {"file": "generic-template-41.jpg", "brand": "Generic template", "market": "n/a", "region": "n/a", "year": "unknown", "type": "mockup", "tier": 1, "breadth_device": "single-screen-dense", "message": "Perfect MobileApp / Download our app now", "screen_communicates": "Phone on the right, generic app home screen", "note": "A stock billboard template. Included because the template industry has settled on this layout, which is itself evidence of the convention.", "source_url": "https://dribbble.com/shots/7114430-Mobile-App-Billboard-Template", "image_url": "https://cdn.dribbble.com/userupload/24763183/file/original-09354269064345d106ee9eb475de7c8f.jpg", "width": 1600, "height": 1063}, {"file": "generic-template-141.jpg", "brand": "Generic template", "market": "n/a", "region": "n/a", "year": "unknown", "type": "mockup", "tier": 1, "breadth_device": "single-screen-dense", "message": "Smartx Awesome Mobile App", "screen_communicates": "Phone right with app UI", "note": "Third template.", "source_url": "https://elements.envato.com/mobile-app-billboard-banner-template-KBNKKW?srsltid=AfmBOoq2QHbXJkQBrAxohRHWLjhlPLCTYejOEkuzA1d6l_OKzYwiRhRU", "image_url": "https://elements-resized.envatousercontent.com/elements-cover-images/01df0ad2-9986-44d3-be2d-8b9f6d42098f?w=1200&h=630&cf_fit=crop&q=85&format=jpeg&s=5c8061b4e1a3c5134d339d0ef29f40b3afb69187a8d837d8bf1d5f3f4326f7bf", "width": 1200, "height": 630}, {"file": "gochat-messenger-156.jpg", "brand": "GoChat Messenger", "market": "UAE - Dubai", "region": "GCC", "year": "unknown", "type": "photo", "tier": 1, "breadth_device": "single-screen-dense", "message": "Make free voice and video calls worldwide with GoChat Messenger", "screen_communicates": "Talent and phone right of the message, QR code for download", "note": "Dubai metro panel. GCC evidence.", "source_url": "https://outdooradvertisinguae.com/dubai-metro-advertising-company-in-dubai-uae/", "image_url": "https://outdooradvertisinguae.com/wp-content/uploads/2026/02/metro3.jpg", "width": 840, "height": 534}, {"file": "revolut-368.jpeg", "brand": "Revolut", "market": "United Kingdom", "region": "Europe", "year": "2024", "type": "mockup", "tier": 1, "breadth_device": "stacked-cards", "message": "THIS IS RETAIL THERAPY", "screen_communicates": "Rounded card frames to the right holding 3D product renders (sunglasses, earbuds, lipstick, fabric), styled as app tiles rather than actual app UI", "note": "The card frame borrowed from the interface without any real UI inside it. Reads cleaner at distance than a device, and is the cheapest way to imply an app without rendering one.", "source_url": "https://fontsinuse.com/uses/61484/revolut", "image_url": "https://original.fontsinuse.com/fontsinuse.com/use-images/N227/227386/227386.jpeg", "width": 2400, "height": 1568}, {"file": "revolut-370.jpeg", "brand": "Revolut", "market": "United Kingdom", "region": "Europe", "year": "2024", "type": "mockup", "tier": 1, "breadth_device": "single-screen-dense", "message": "CHANGE THE WAY YOU MONEY. For those who want more from their money, there's Revolut", "screen_communicates": "Talent on the right with a balance card and a transaction row floated over the photograph", "note": "Shows the hybrid: human on the right, UI floated over them rather than beside them. Carries an illustrative purposes only disclaimer, so it is a brand render rather than a live placement.", "source_url": "https://fontsinuse.com/uses/61484/revolut", "image_url": "https://original.fontsinuse.com/fontsinuse.com/use-images/N227/227389/227389.jpeg", "width": 2400, "height": 1568}, {"file": "uber-387.jpg", "brand": "Uber", "market": "United States", "region": "Americas", "year": "2022", "type": "photo", "tier": 1, "breadth_device": "single-screen-dense", "message": "Go anywhere. Get anything.", "screen_communicates": "No phone at all. Two columns of service words flank the line: subway, scooter, ride, train, bike, moped on the left; courier, cleaner, food, groceries, dog walker, meds on the right", "note": "Breadth carried entirely by typography. Proves the app screen is one solution to the problem, not the only one.", "source_url": "https://www.linkedin.com/pulse/journey-behind-ubers-super-app-vision-andrew-warr-moo8c", "image_url": "https://media.licdn.com/dms/image/v2/D5612AQFCf0js5NlOYA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1727415499766?e=2147483647&v=beta&t=ETTDObOapwcc1rb1V4rXUA-lVOcdj_QNFbHtFlzMr08", "width": 960, "height": 540}, {"file": "varo-53.webp", "brand": "Varo", "market": "United States", "region": "Americas", "year": "2021", "type": "photo", "tier": 1, "breadth_device": "multi-phone", "message": "Money shouldn't just work for some of us. It should work for all of us.", "screen_communicates": "Two phone screens at LEFT showing account and transaction views", "note": "Mirror. The copy is the hero, the screens are supporting.", "source_url": "https://billups.com/case-studies/varo-bank-drives-digital-traffic-with-ooh-advertising", "image_url": "https://framerusercontent.com/images/DK9UymYgVXunvpuMyPO3eSeykQ.webp?width=1540&height=1033", "width": 1540, "height": 1033}, {"file": "careem-95.jpg", "brand": "Careem", "market": "UAE - Dubai", "region": "GCC", "year": "2023", "type": "photo", "tier": 2, "breadth_device": "none", "message": "The everything app.", "screen_communicates": "No app screen at all. Three words on a JCDecaux unipole", "note": "The purest statement of the breadth claim in the set, and it shows the opposite strategy: assert breadth, do not demonstrate it. Directly relevant to Pura.", "source_url": "https://brand.careem.com/logo/", "image_url": "https://brand.careem.com/wp-content/uploads/2023/03/full-stop.jpg", "width": 2878, "height": 1382}, {"file": "careem-plus-98.jpg", "brand": "Careem Plus", "market": "UAE", "region": "GCC", "year": "2023", "type": "photo", "tier": 2, "breadth_device": "icon-grid", "message": "Arabic: save AED 200+ every month with Careem Plus", "screen_communicates": "Talent with a phone, coins and service icons centre, message right in Arabic", "note": "RTL, and the subscription bundle is the breadth vehicle.", "source_url": "https://insiteooh.com/article/8669-unlimited-cost-saving-promotions-on-dubai-ooh-through-careem-plus", "image_url": "https://insiteooh.com/storage/media/articles/70204/2-Share-(20).jpg", "width": 1200, "height": 630}, {"file": "exito-358.jpg", "brand": "Exito", "market": "Colombia", "region": "Americas", "year": "2023", "type": "photo", "tier": 2, "breadth_device": "single-screen-dense", "message": "Tenerlo todo para tu hogar, es tener lo que tu necesitas", "screen_communicates": "Isometric cutaway illustration of a house filled with delivered goods, right of the message", "note": "Breadth shown as a world rather than as an interface. A genuine alternative to the app screen.", "source_url": "https://www.heykidstudio.com/portfolio/exito/", "image_url": "https://www.heykidstudio.com/wp-content/uploads/2023/07/VALLA.jpg", "width": 1920, "height": 1280}, {"file": "gochat-messenger-152.jpg", "brand": "GoChat Messenger", "market": "UAE - Dubai", "region": "GCC", "year": "unknown", "type": "photo", "tier": 2, "breadth_device": "icon-grid", "message": "Enjoy FREE HD calls and many more super features", "screen_communicates": "Feature icon set to the right of the message", "note": "The phrase many more super features is the breadth claim doing the work verbally. No app screen, the breadth is claimed verbally by 'many more super features'.", "source_url": "https://insiteooh.com/article/7764-uaes-super-app-gochat-hd-voice-video-calls-ooh-campaign-takes-over-dubai-sharjah", "image_url": "https://insiteooh.com/storage/app/media/uploaded-files/5-master2-5-r1axbztony84o0g0koo4wwswgg8g8g-2023-04-04-151134.jpg", "width": 2083, "height": 992}, {"file": "kose-386.webp", "brand": "Kose", "market": "Zimbabwe", "region": "Africa", "year": "2023", "type": "photo", "tier": 2, "breadth_device": "single-screen-dense", "message": "Move on your terms. Know your price, track your ride", "screen_communicates": "Talent holding a phone, App Store and Google Play badges stacked at lower left", "note": "Super app launch in a small market using the format as a download driver. Portrait format, so it fails the landscape criterion. Kept at Tier 2 because the message and badge stack are still instructive.", "source_url": "https://www.techzim.co.zw/2026/08/local-startup-kose-launches-super-app-to-compete-against-indrive/", "image_url": "https://t3n9sm.c2.acecdn.net/wp-content/uploads/2026/08/Kose-app-billboard-jpg.webp", "width": 1400, "height": 908}, {"file": "yango-maps-503.jpg", "brand": "Yango Maps", "market": "UAE - Dubai", "region": "GCC", "year": "2024", "type": "photo", "tier": 2, "breadth_device": "none", "message": "MOVE YOUR WAY", "screen_communicates": "Product name lockup right, bilingual", "note": "Yango in the GCC, single product rather than super app framing.", "source_url": "https://how.studio/branding/yango-maps", "image_url": "https://images.prismic.io/howandhow/17697925-ce2d-4060-9e34-ac2e12b50fb9_Yango-Brand-OOH-How-Agency-02-L-3840x2160.jpg?auto=compress,format", "width": 3840, "height": 2160}];
+const F={tier:"",type:"",region:"",device:""};
+const cards=[...document.querySelectorAll('.card')];
+function apply(){
+  const q=document.getElementById('q').value.trim().toLowerCase();
+  let n=0;
+  cards.forEach(c=>{
+    let ok=(!F.tier||c.dataset.tier===F.tier)&&(!F.type||c.dataset.type===F.type)
+      &&(!F.region||c.dataset.region===F.region)&&(!F.device||c.dataset.device===F.device)
+      &&(!q||c.dataset.hay.includes(q));
+    c.classList.toggle('hide',!ok); if(ok)n++;
+  });
+  document.getElementById('count').textContent=n+' of '+cards.length+' shown';
+}
+document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{
+  F[b.dataset.f]=b.dataset.v;
+  document.querySelectorAll('.chip[data-f="'+b.dataset.f+'"]').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); apply();
+});
+document.getElementById('q').oninput=apply;
+const dr=document.getElementById('drawer'),sc=document.getElementById('scrim');
+function shut(){dr.classList.remove('open');sc.classList.remove('on');}
+document.getElementById('close').onclick=shut; sc.onclick=shut;
+document.onkeydown=ev=>{if(ev.key==='Escape')shut();};
+cards.forEach(c=>c.onclick=()=>{
+  const r=DATA[+c.dataset.i];
+  document.getElementById('dbody').innerHTML=
+    '<img src="images/'+r.file+'">'+
+    '<h2>'+r.brand+'</h2>'+
+    '<dl>'+
+    '<dt>Left hand message</dt><dd>'+(r.message||'n/a')+'</dd>'+
+    '<dt>What the app screen communicates</dt><dd>'+(r.screen_communicates||'n/a')+'</dd>'+
+    '<dt>Breadth device</dt><dd>'+r.breadth_device+'</dd>'+
+    '<dt>Market</dt><dd>'+r.market+'</dd>'+
+    '<dt>Type</dt><dd>'+r.type+(r.type==='mockup'?' (agency render, not a photographed placement)':' (photographed placement)')+'</dd>'+
+    '<dt>Tier</dt><dd>'+r.tier+'</dd>'+
+    '<dt>Note</dt><dd>'+(r.note||'')+'</dd>'+
+    '<dt>Source</dt><dd><a href="'+r.source_url+'" target="_blank">'+r.source_url+'</a></dd>'+
+    '</dl>';
+  dr.classList.add('open'); sc.classList.add('on'); dr.scrollTop=0;
+});
+apply();
+</script></body></html>
