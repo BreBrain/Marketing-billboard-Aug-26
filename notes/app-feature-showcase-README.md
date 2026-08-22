@@ -1,96 +1,106 @@
 # App Feature Showcase Moodboard
 
-One app at the centre, its features arranged around it. The ecosystem graphic, the exploded render, the feature constellation.
+How a product with many services shows that breadth in a single image. Built to answer one question: **what actually goes on the right hand half of a billboard.**
 
-**Open:** `Pura-App-Feature-Showcase-Moodboard.html` (single file, works offline, no server needed).
+**Open:** `Pura-App-Feature-Showcase-Moodboard.html` (single file, works offline, no server).
 
-Sibling to `../OOH-Superapp-Moodboard/`. That collection studied how brands **claim** breadth on a billboard. This one studies how they **show** it, and answers the question that one left open.
+Sibling to `../OOH-Superapp-Moodboard/`, which studied how brands *claim* breadth on a hoarding. This one studies how they *show* it.
+
+**80 references.** Closed at Brenton's call; the original target was 150. See Coverage below.
+
+---
 
 ## The finding
 
-Every entry records how many features it shows and whether it still reads at a glance. Legibility was judged per image on what it actually looks like, never derived from the count, because deriving it would have made the finding a restatement of the threshold.
+Every entry carries two independent verdicts, both judged by eye, neither derived from the other:
 
-| Features shown | Entries | Still legible | Hit rate |
-|---|---|---|---|
-| 1 to 3 | 4 | 4 | **100%** |
-| 4 to 6 | 18 | 18 | **100%** |
-| 7 to 9 | 13 | 13 | **100%** |
-| 10 or more | 15 | 9 | **60%** |
+- `legible_at_glance` — does it read on a screen
+- `billboard_viable` — does it survive being cropped to half a landscape hoarding and read at distance
 
-**Nothing below ten features failed. All 35 of them read.** So the first answer is simple: up to nine, count is not the constraint.
+### Treatment predicts billboard viability. Nothing else comes close.
 
-**Above ten, one structure carries almost everything: the grid.**
-
-| Above ten and still legible | Count | Arrangement |
+| Treatment | Entries | Billboard viable |
 |---|---|---|
-| Revolut Hub | 20 | grid |
-| Apple devices and services | 13 | grid |
-| Careem app grid | 12 | grid |
-| Paytm | 12 | two branches of six |
-| Apple Health Browse (twice) | 10 | grid |
-| Starling categories | 10 | grid |
-| Apple Watch health | 10 | radial |
-| Apple Services objects | 10 | floating |
+| **photographic** | 11 | **11 (100%)** |
+| **3d render** | 21 | **18 (86%)** |
+| illustration | 7 | 4 (57%) |
+| real UI composite | 14 | 7 (50%) |
+| **flat vector** | 27 | **7 (26%)** |
 
-And what fails above ten: Gojek's seventeen plain spokes, Grab's eighteen loose icons, Inc42's sixteen scattered logos, a sphere of forty icons, Apple's forty icon concentric diagram.
+Photographed objects and rendered objects survive. Flat vector diagrams do not. The most collected treatment is the worst performing one.
 
-**The distinction is not how many things, it is whether they add up to ONE object.** A grid is a single familiar shape the eye takes in whole, so Revolut can put twenty services in a Hub screen and it still reads. Seventeen spokes are seventeen separate things, and they do not.
+### Feature count barely matters for a billboard
 
-Grouping does the same job by another route: Paytm splits twelve into two branches of six, Rappi hangs twenty sub brands off eight ring segments, Revolut hangs thirty products off eight buckets. **Make it one object, or make it few groups. Never make it a list.**
+| Features shown | Entries | Legible on screen | Billboard viable |
+|---|---|---|---|
+| 1 to 3 | 5 | 100% | 80% |
+| 4 to 6 | 29 | 100% | 69% |
+| 7 to 9 | 21 | 95% | 52% |
+| 10 or more | 25 | 72% | 48% |
+
+Viability declines gently from 80% to 48% while screen legibility falls off a cliff at ten. **For a hoarding, how you draw it matters far more than how many you show.**
+
+### Arrangement, ranked by what survives distance
+
+| Arrangement | Entries | Billboard viable |
+|---|---|---|
+| container-spill · object-metaphor · mosaic-gestalt · world-place · replacement-stack | 12 | **100%** |
+| orbit-3d | 16 | 88% |
+| exploded | 3 | 67% |
+| grid-around | 15 | 60% |
+| shelf-menu | 2 | 50% |
+| **radial** | **22** | **36%** |
+| flat-diagram | 4 | 25% |
+| stacked-cards · fanned-screens · cutaway · body-centred | 6 | 0% |
+
+**Every metaphor led direction scores 100%. The ring of labels, which is the shape most collected and the shape the whiteboard sketches, scores 36%.**
+
+---
+
+## The five images that answer the brief
+
+1. **ERA Real Estate, suitcase** — an open suitcase holding an entire neighbourhood of amenities under the line *a wide range of facilities*. Three executions, same object, different world inside each. No icons, no grid, no diagram. Works at half a billboard untouched.
+2. **Capsule, heart of pills** — a large white heart built entirely from capsule shapes. At distance one heart; up close, many medicines. One object and many services at the same time.
+3. **ClickUp, One app to replace them all** — a real transit poster that shows nothing and says everything.
+4. **It's everything [brand], in your pocket** — a deployed ad template found in five variants. Message left, six named service chips, phone right. Almost exactly Pura's service count, already solved.
+5. **General Electric, 1950s** — a railway carriage sliced open lengthways, fourteen businesses visible inside one vehicle.
+
+---
 
 ## What is in it
 
-50 entries, built in two rounds. Round 1 produced 58; Brenton pruned it to 25 references, which tightened the definition (see `00-reference-brief.md`). Round 2 added 25 more against the tightened rules, weighted toward **Revolut, Apple, Monzo and the well known super apps**.
-
 | | Count |
 |---|---|
-| Shipped product marketing (`product`) | 36 |
-| Portfolio and concept work (`concept`) | 14 |
-| Legible at a glance | 44 |
-| Not legible at a glance | 6 |
+| Shipped product marketing | 52 |
+| Concept and portfolio work | 28 |
+| Billboard viable | 47 |
+| Legible on screen | 72 |
 
-Arrangements: radial (14), grid around (14), orbit 3d (14), flat diagram (3), stacked cards (2), exploded (2), fanned screens (1).
-
-Treatments: 3d render (20), flat vector (17), real UI composite (9), illustration (4).
-
-Brands: Apple, Apple Health, Apple One, Apple Watch, Revolut, Monzo, Starling Bank, Wise, Chime, Cash App, Careem, Careem Pay, Rappi, Gojek, GoTo, Grab, WeChat, Paytm, PhonePe, Google, Gemini, Samsung Health, BMW, Inc42.
-
-Note the treatment shift between rounds. Round 1 skewed to flat vector strategy diagrams; the prune killed most of them, and round 2 is dominated by **3d render** and real product marketing. That is the collection Brenton actually wanted.
-
-## Documents
-
-| File | What it is |
-|---|---|
-| `00-reference-brief.md` | The filter. Written before the scrape |
-| `02-synthesis.md` | What it means for Pura, and the answer back into the OOH creative brief |
-| `_pipeline/manifest.json` | Machine readable index, every entry with its count, legibility verdict and source |
+41 brands, including Apple, Apple Watch, Revolut, Monzo, Starling, Wise, Careem, Rappi, Grab, Gojek, WeChat, Paytm, PhonePe, Practo, Halodoc, Alodokter, Samsung Health, Capsule, ERA Real Estate, ClickUp, Victorinox, General Electric, SJ InterCity.
 
 ## How it was built
 
 ```
-firecrawl search --sources images   45 queries, paced (the API rate limits at 429 long before credits run out)
+firecrawl search --sources images   paced, 429 backoff, resumable
         v
-harvest.py    width >= 800px, aspect >= 0.6, stock-library domains rejected at the URL
-        v                       900 raw  ->  436 downloaded  ->  411 decodable
-contact.py    contact sheets, 16 per sheet, for triage
+harvest.py    >=800px, aspect >=0.6, stock-library domains rejected at the URL
         v
-curate.py     the visual filter, by eye against 00-reference-brief.md
-        v                       411  ->  60 shortlisted
-qa.py         second pass, 4 per sheet at full resolution
-        v                       60  ->  58 kept
-build.py      manifest.json -> the offline HTML viewer
+contact.py    triage sheets, 16 per sheet
+        v
+qa.py         SECOND PASS at full resolution, 4 per sheet - mandatory
+squint.py     small-render pass for billboard_viable, because a hoarding is a distance read
+        v
+curations.jsonl -> rebuild.py -> build.py -> selfcheck.py -> publish.sh
 ```
 
-The pipeline is the one built for the OOH moodboard, copied across. Two changes were required, and the first would have silently wrecked the run:
+Curation is keyed on **content derived candidate filenames, never array indices**. `candidates.json` re-sorts every time new searches land, and index keying silently repointed 25 curated entries at the wrong images once before this was fixed.
 
-1. **`MIN_ASPECT` dropped from 1.25 to 0.6.** The OOH value existed to enforce landscape billboards. This genre is square, 4:3 and portrait, so the old value would have discarded most of the good supply without saying so.
-2. **A stock-library domain blocklist** (`shutterstock`, `istockphoto`, `dreamstime`, `vecteezy` and others). It rejected **105 results**, more than a tenth of everything found. This genre is the most flooded category on stock sites.
+Every publish was gated by `selfcheck.py` and verified against the **live** site, with automatic rollback on failure. Five rounds, five passing publishes, full audit trail in `_pipeline/loop/round-*.md`.
 
-## Coverage status and honest limits
+## Coverage and honest limits
 
-- **AI generated filler is now a serious contaminant in this genre, worse than in photographed OOH.** The full resolution second pass removed a Tata Neu "ecosystem strategy" that was AI generated, betrayed by garbled type reading "Data Flows to trasse NeuCoins flow", "Delivery truks" and "activisto in monta new uents". It was completely convincing at thumbnail size. **Do not run this pipeline without the second pass.**
-- **A VectorMine watermarked diagram was also removed** at the second pass, having survived triage.
-- **One query returned literal exploding phones.** "phone with app features exploding" surfaced Galaxy Note 7 battery fires. Worth remembering that this genre's vocabulary overlaps with hardware failure.
-- **No Dribbble or Behance scrape was run.** Image search plus trade and agency sources carried the collection past target, so the planned gallery harvest was not needed. That is the next lever if a higher craft ceiling is wanted, and it is where the best concept work lives.
-- **Health is under represented relative to commerce**, which is itself a finding and is discussed in the synthesis.
+- **Closed at 80 of a 150 target, by Brenton's decision.** Not a failure to reach it: yield fell from 0.57 keepers per query (commerce) to 0.18 (health) as vocabulary exhausted, then recovered to 0.42 once metaphor led directions were introduced. 362 Firecrawl credits and 268 unrun queries remain, so the collection could be resumed at any time by following `_pipeline/loop/RUNBOOK.md`.
+- **Health supply is genuinely thin for this genre.** Health marketing is dominated by app screenshot rows and agency consultancy decks, both disqualified. The health entries that did qualify are among the most useful in the set.
+- **Two directions returned nothing after direct targeted searching:** `character-many-arms` (octopus, many hands) and `multiple-exposure` (one person, many moments, one frame). Recorded as findings. Nobody is doing them, so Pura doing one would be distinctive rather than derivative.
+- **AI generated filler is a serious contaminant.** The full resolution second pass removed synthetic images that were completely convincing at thumbnail size, including a billboard reading "Mobile Roseting" and an ecosystem graphic captioned "Data Flows to trasse NeuCoins flow". Do not run this pipeline without that pass.
 - Third party marketing images held for internal reference. Not for reproduction.
